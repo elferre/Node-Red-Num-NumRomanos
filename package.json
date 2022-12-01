@@ -2,7 +2,7 @@
   "name": "num-romano",
   "version": "0.0.1",
   "description": "Pasar Numero a Numeros Romanos",
-  "homepage": "https://github.com/elferre/Node-Red-Num-Letras",
+  "homepage": "https://github.com/elferre/Node-Red-Num-NumRomanos",
   "node-red": {
     "nodes": {
       "num-string": "num-romano.js"
