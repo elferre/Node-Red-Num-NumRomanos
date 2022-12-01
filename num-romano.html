@@ -1,0 +1,33 @@
+<script type="text/javascript">
+    RED.nodes.registerType('num-romano',{
+        category: 'funciones',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""},
+            config: { value: "true" },
+        },
+        inputs:1,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name||"num-romano";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="num-romano">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+      <div class="form-row">
+        <label for="node-input-config">
+            <i class="fa fa-tag"></i> Returns Config</label>
+        <input type="checkbox" id="node-input-config" name="config" value="true">
+      </div>
+</script>
+
+<script type="text/html" data-help-name="num-romano">
+    <p>Plugin.</p>
+    <p>Pasar Numeros a Numeros Romanos.</p>
+</script>
